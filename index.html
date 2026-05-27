@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ATLAS" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>ATLAS — Mapa da Vida</title>
+</head>
+<body>
+  <main class="phone" id="app">
+    <img class="main-art" src="assets/main-screen.png" alt="ATLAS Mapa da Vida" />
+
+    <button class="hotspot h-saude" aria-label="Abrir Saúde"></button>
+    <button class="hotspot h-financeiro" aria-label="Abrir Financeiro"></button>
+    <button class="hotspot h-projetos" aria-label="Abrir Projetos"></button>
+    <button class="hotspot h-desenvolvimento" aria-label="Abrir Desenvolvimento"></button>
+    <button class="hotspot h-social" aria-label="Abrir Social"></button>
+    <button class="hotspot h-alertas" aria-label="Abrir Alertas"></button>
+    <button class="hotspot h-inventario" aria-label="Abrir Inventário"></button>
+    <button class="hotspot h-menu" id="openMenu" aria-label="Abrir menu"></button>
+
+    <section class="drawer" id="drawer" aria-hidden="true">
+      <img class="menu-art" src="assets/menu-panel.png" alt="Menu ATLAS" />
+      <button class="close" id="closeMenu" aria-label="Fechar menu"></button>
+      <button class="menu-hot mh-perfil" aria-label="Perfil"></button>
+      <button class="menu-hot mh-calendario" aria-label="Calendário"></button>
+      <button class="menu-hot mh-estatisticas" aria-label="Estatísticas"></button>
+      <button class="menu-hot mh-config" aria-label="Configurações"></button>
+      <button class="menu-hot mh-backup" aria-label="Backup e exportar"></button>
+      <button class="menu-hot mh-importar" aria-label="Importar dados"></button>
+      <button class="menu-hot mh-inventario" aria-label="Inventário avançado"></button>
+      <button class="menu-hot mh-historico" aria-label="Histórico"></button>
+    </section>
+    <div class="shade" id="shade"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
